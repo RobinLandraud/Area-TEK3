@@ -1,0 +1,14 @@
+FROM node:19-alpine3.16
+
+ENV CLIENT_WEB_HOME /home/app/client_web
+RUN mkdir -p $CLIENT_WEB_HOME
+WORKDIR $CLIENT_WEB_HOME
+
+ENV NODE_ENV development
+ENV PORT 8081
+
+COPY . $CLIENT_WEB_HOME
+
+EXPOSE $PORT
+
+RUN npm install

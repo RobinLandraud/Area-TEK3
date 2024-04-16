@@ -1,0 +1,299 @@
+{
+    "client": {
+        "host": "localhost:8081"
+    },
+    "server": {
+        "host": "localhost:8080",
+        "services": [
+            {
+                "name": "google",
+                "nickname": "GL",
+                "description": "Google services",
+                "type": "oauth2",
+                "actions": [
+                    {
+                        "name": "Detect the arrival of an email",
+                        "description": "triggered when a new email is received",
+                        "nickname": "AMA0"
+                    }
+                ],
+                "reactions": [
+                    {
+                        "name": "Send an email to an specific user",
+                        "description": "send an email to the user",
+                        "nickname": "RMA0",
+                        "reaction_data": [
+                            {
+                                "name": "to",
+                                "type": "string",
+                                "description": "email address of the recipient"
+                            },
+                            {
+                                "name": "subject",
+                                "type": "string",
+                                "description": "subject of the email"
+                            },
+                            {
+                                "name": "body",
+                                "type": "string",
+                                "description": "body of the email"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "weather",
+                "nickname": "WE",
+                "description": "Weather services",
+                "type": "apiKey",
+                "actions": [
+                    {
+                        "name": "Weather changed ",
+                        "description": "triggered when the weather has changed",
+                        "nickname": "AWE0"
+                    }
+                ],
+                "reactions": []
+            },
+            {
+                "name": "spotify",
+                "nickname": "SP",
+                "description": "Spotify services",
+                "type": "oauth2",
+                "actions": [
+                    {
+                        "name": "New playlist or new song in a playlist",
+                        "description": "triggered when a new playlist is created or when a new song is added in a playlist",
+                        "nickname": "ASP0"
+                    },
+                    {
+                        "name": "New song in playlist",
+                        "description": "triggered when a new song is added in a playlist",
+                        "nickname": "ASP1"
+                    }
+                ],
+                "reactions": [
+                    {
+                        "name": "Create a playlist and add a query song to it",
+                        "description": "Create a playlist with a given name and add a query song(given also) to it",
+                        "nickname": "RSP0",
+                        "reaction_data": [
+                            {
+                                "name": "playlist",
+                                "type": "string",
+                                "description": "name of the playlist to create"
+                            },
+                            {
+                                "name": "song",
+                                "type": "string",
+                                "description": "name of the song to query"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Create playlist and add the song of the day to it",
+                        "description": "Create playlist and add the song of the day to it",
+                        "nickname": "RSP1",
+                        "reaction_data": [
+                            {
+                                "name": "playlist",
+                                "type": "string",
+                                "description": "name of the playlist to create"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Follow an user or an artist",
+                        "description": "Follow an user or an artist",
+                        "nickname": "RSP2",
+                        "reaction_data": [
+                            {
+                                "name": "name",
+                                "type": "string",
+                                "description": "name of the user or artist to follow"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Save a selected album",
+                        "description": "Save a selected album",
+                        "nickname": "RSP3",
+                        "reaction_data": [
+                            {
+                                "name": "album",
+                                "type": "string",
+                                "description": "name of the album to save"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Subscribe to a selected show",
+                        "description": "Subscribe to a selected show",
+                        "nickname": "RSP4",
+                        "reaction_data": [
+                            {
+                                "name": "show",
+                                "type": "string",
+                                "description": "name of the show to sub on"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Add a selected track to the current queue",
+                        "description": "Add a selected track to the current queue",
+                        "nickname": "RSP5",
+                        "reaction_data": [
+                            {
+                                "name": "song",
+                                "type": "string",
+                                "description": "name of the song to add to the queue"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "timer",
+                "nickname": "TI",
+                "description": "Timer services",
+                "type": "datetime",
+                "actions": [
+                    {
+                        "name": "timer",
+                        "description": "triggered when a timer is finished",
+                        "nickname": "ATI0",
+                        "action_data": [
+                            {
+                                "name": "time",
+                                "type": "datetime",
+                                "description": "time of the timer"
+                            }
+                        ]
+                    }
+                ],
+                "reactions": []
+            },
+            {
+                "name": "github",
+                "nickname": "GH",
+                "description": "Github services",
+                "type": "oauth2",
+                "actions": [],
+                "reactions": [
+                    {
+                        "name": "Create an issue with a given name",
+                        "description": "Create an issue with a given name(and given body) for a given repo name",
+                        "nickname": "RGH0",
+                        "reaction_data": [
+                            {
+                                "name": "repo",
+                                "type": "string",
+                                "description": "name of the selected repo name to create the issue"
+                            },
+                            {
+                                "name": "title",
+                                "type": "string",
+                                "description": "name of the title to create the issue"
+                            },
+                            {
+                                "name": "body",
+                                "type": "string",
+                                "description": "body used for the issue"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Create a pull request for a repository(given repo name, title, branch name, body",
+                        "description": "Create a pull request for a repository(given repo name, title, branch name, body",
+                        "nickname": "RGH1",
+                        "reaction_data": [
+                            {
+                                "name": "repo",
+                                "type": "string",
+                                "description": "name of the selected repo name to do the pull request"
+                            },
+                            {
+                                "name": "title",
+                                "type": "string",
+                                "description": "name of the title for the pull request"
+                            },
+                            {
+                                "name": "branch",
+                                "type": "string",
+                                "description": "name of the branch used for the pull request"
+                            },
+                            {
+                                "name": "body",
+                                "type": "string",
+                                "description": "name of the body wanted"
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "name": "reddit",
+                "nickname": "RD",
+                "description": "Reddit services",
+                "type": "oauth2",
+                "actions": [
+                    {
+                        "name": "New subscription in a subreddit",
+                        "description": "triggered when a new subscription is created in a subreddit",
+                        "nickname": "ARD0"
+                    }, {
+                        "name": "Subreddit updated",
+                        "description": "triggered when a subreddit is updated",
+                        "nickname": "ARD1"
+                    }
+                ],
+                "reactions": [
+                    {
+                        "name": "Submit a post in a subreddit",
+                        "description": "Submit a post in a subreddit with a given title, text and subreddit name",
+                        "nickname": "RRD0",
+                        "reaction_data": [
+                            {
+                                "name": "subreddit",
+                                "type": "string",
+                                "description": "name of the subreddit to create the post on"
+                            },
+                            {
+                                "name": "title",
+                                "type": "string",
+                                "description": "String used for the title of the post"
+                            },
+                            {
+                                "name": "text",
+                                "type": "string",
+                                "description": "String used for the text of the post"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Compose and send a message to an user",
+                        "description": "Compose and send a message to an given user with a given subject and text",
+                        "nickname": "RRD1",
+                        "reaction_data": [
+                            {
+                                "name": "to",
+                                "type": "string",
+                                "description": "name of the user to send the message to"
+                            },
+                            {
+                                "name": "subject",
+                                "type": "string",
+                                "description": "String used for the subject of the message"
+                            },
+                            {
+                                "name": "text",
+                                "type": "string",
+                                "description": "String used for the text of the message"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

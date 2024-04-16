@@ -1,0 +1,37 @@
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.auth-field {
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+.good-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #36f31d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #333;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  .error-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff6666;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #333;
+    z-index: 1000;
+    text-align: center;
+  }

@@ -1,0 +1,6 @@
+# React #
+/node_modules
+/build
+
+# Environments
+.env

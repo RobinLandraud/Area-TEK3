@@ -1,0 +1,12 @@
+.service-container {
+    padding: 20px;
+    margin: 5px;
+    align-self: center;
+    text-align: center;
+    border: 2px solid rgb(19, 16, 16);
+    border-radius: 4px;
+}
+
+.input-name-field {
+    max-width: 80%;
+}

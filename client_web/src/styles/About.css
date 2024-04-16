@@ -1,0 +1,25 @@
+.info-container {
+    display: flex;
+    flex-direction: column;
+    border: black solid 4px;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    width: 90%;
+}
+
+.info-container:hover {
+    cursor: pointer;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}

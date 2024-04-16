@@ -1,0 +1,212 @@
+.services {
+  /* Add styles for the overall container of the services */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.services h2{
+  /* Add styles for the heading */
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  width:100%;
+}
+
+.services ul {
+  /* Add styles for the list of services */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  /* Add styles for each service */
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  background: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.services li h3 {
+  /* Add styles for the service name */
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.services li p {
+  /* Add styles for the service description */
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.services li h4 {
+  /* Add styles for the actions and reactions headings */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.services li ul {
+  /* Add styles for the actions and reactions lists */
+  list-style: none;
+  padding: 0;
+}
+
+.services li li {
+  /* Add styles for each action and reaction */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.redditButton {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #b90f1d;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tumblrButton {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #0e57f4;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.spotifyButton {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #1db954;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.githubButton {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #44536b;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+ .reddit-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+  background-color: #b90f1d;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #888888;
+  margin-bottom:30px;
+}
+
+.spotify-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+  background-color: #1db954;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #888888;
+  margin-bottom:30px;
+}
+
+.github-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+  background-color: #44536b;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #888888;
+  margin-bottom:30px;
+}
+
+.tumblr-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+  background-color: #0e57f4;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #888888;
+  margin-bottom:30px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.gmail-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+  background-color: #9e2731;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #888888;
+  margin-bottom:30px;
+}
+
+.no-conect-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20%;
+}

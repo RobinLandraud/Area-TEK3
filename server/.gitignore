@@ -1,0 +1,17 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+
+# Python #
+*.py[cod]
+*$py.class
+
+# mypy
+.mypy_cache/
+
+# Visual Studio Code #
+.vscode/
+
+debug.log
